@@ -1,0 +1,456 @@
+.navbar {
+  background-color: navy;
+  padding-top: 20px;
+  height: 100px;
+  width: 100%;
+}
+.navbar img {
+  width: 60px;
+  height: 50px;
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+.navbar i {
+  font-weight: bolder;
+  font-size: larger;
+  font-family: initial;
+  color: rgb(122, 178, 237);
+  margin-left: 22px;
+}
+.navbar button {
+  color: aliceblue;
+  border-color: rgb(122, 178, 237);
+}
+.navbar .navbar-nav {
+  font-size: 25px;
+  margin-left: 50px;
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+  color: aliceblue;
+}
+.banner img {
+  width: 100%;
+  height: 90vh;
+}
+.banner .banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner .banner-text h1, .banner .banner-text h2, .banner .banner-text h3 {
+  font-size: 70px;
+  line-height: 6rem;
+}
+.banner .banner-text .links {
+  display: flex;
+}
+.banner .banner-text .links .sch, .banner .banner-text .links .parti {
+  width: 40%;
+  margin-left: 40px;
+  font-size: 2em;
+  font-weight: bolder;
+  padding: 10px;
+  color: #fff;
+  background: aliceblue;
+  border: 2px solid rgb(122, 178, 237);
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.banner .banner-text .links .sch .sch .parti:hover, .banner .banner-text .links .parti .sch .parti:hover {
+  background: rgb(122, 178, 237);
+}
+.banner .banner-text .links .sch a, .banner .banner-text .links .parti a {
+  text-decoration: none;
+}
+.banner .banner-text i {
+  font-weight: bold;
+  font-size: larger;
+  color: #0f9ce8;
+}
+.banner .banner-text p {
+  text-align: center;
+  font-family: Tahoma, Arial, sans-serif;
+  color: blue;
+  margin: 50px 0;
+}
+.banner .banner-text .box {
+  width: 40%;
+  margin: 20px auto;
+  padding: 35px;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+.banner .banner-text .button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  background: blue;
+  border: 2px solid rgb(122, 178, 237);
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.banner .banner-text .button:hover {
+  background: rgb(122, 178, 237);
+}
+.banner .banner-text .overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.banner .banner-text .overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.banner .banner-text .popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+.banner .banner-text .popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.banner .banner-text .popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.banner .banner-text .popup .close:hover {
+  color: blue;
+}
+.banner .banner-text .popup .content {
+  max-height: 50%;
+  overflow: auto;
+  margin-top: 20px;
+  color: rgb(122, 178, 237);
+}
+
+.section1 {
+  overflow: hidden;
+  background-color: aliceblue;
+}
+.section1 img {
+  margin-top: 20px;
+}
+
+.container .timer {
+  display: flex;
+  text-align: end;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.container .timer h1 {
+  color: blue;
+}
+.container .timer ul {
+  margin-top: 15px;
+  list-style: none;
+  display: flex;
+  text-align: end;
+  justify-content: flex-end;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.container .timer ul li {
+  text-align: center;
+  color: aliceblue;
+}
+.container .timer ul li h1 {
+  color: red;
+}
+.container .timer ul li p {
+  font-size: 14px;
+  color: blue;
+}
+.container details {
+  padding: 20px;
+  margin-left: 20px;
+}
+.container #registerForm, .container .form-control {
+  margin: 10px;
+  background: red;
+  font: normal 14px/20px "PT Sans", sans-serif;
+  color: #000;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+}
+.container #registerForm .instruction, .container .form-control .instruction {
+  background-color: rgb(241, 241, 241);
+  border-left: 5px solid #054283;
+  padding: 10px;
+  margin-top: 10px;
+}
+.container #registerForm .instruction p, .container .form-control .instruction p {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px;
+}
+.container #registerForm .instruction .instruct, .container .form-control .instruction .instruct {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 10px;
+  padding: 10px;
+}
+.container #registerForm ul, .container .form-control ul {
+  list-style: none;
+}
+.container #registerForm label, .container .form-control label {
+  display: block;
+  margin: 10px;
+  font-size: 18px;
+  color: #4180CB;
+}
+.container #registerForm .inpt, .container .form-control .inpt {
+  border: 1px solid #777;
+  font-size: 14px;
+  color: #000;
+  line-height: 45px;
+  width: 320px;
+  width: 98%;
+  margin: 15px;
+}
+.container #registerForm select, .container .form-control select {
+  border: 1px solid #777;
+  font-size: 14px;
+  color: #000;
+  line-height: 45px;
+  height: 40px;
+  width: 320px;
+  width: 98%;
+  margin: 15px;
+}
+.container #registerForm .form-control li, .container .form-control .form-control li {
+  margin-bottom: 15px;
+}
+.container #registerForm button, .container .form-control button {
+  background: #343434;
+  color: #fff;
+  font-size: 16px;
+  line-height: 47px;
+  border: none;
+  padding: 0 30px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.d_null {
+  display: none;
+}
+
+.schReg, .form-control {
+  margin: 10px;
+  background: red;
+  font: normal 14px/20px "PT Sans", sans-serif;
+  color: #000;
+  width: 50%;
+  height: auto;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+}
+.schReg .instruction, .form-control .instruction {
+  background-color: rgb(241, 241, 241);
+  border-left: 5px solid #054283;
+  padding: 10px;
+  margin-top: 10px;
+}
+.schReg .instruction p, .form-control .instruction p {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px;
+}
+.schReg .instruction .instruct, .form-control .instruction .instruct {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 10px;
+  padding: 10px;
+}
+.schReg ul, .form-control ul {
+  list-style: none;
+}
+.schReg label, .form-control label {
+  display: block;
+  margin: 10px;
+  font-size: 18px;
+  color: #4180CB;
+}
+.schReg .inpt, .form-control .inpt {
+  border: 1px solid #777;
+  font-size: 14px;
+  color: #000;
+  line-height: 45px;
+  width: 320px;
+  width: 98%;
+  margin: 15px;
+}
+.schReg select, .form-control select {
+  border: 1px solid #777;
+  font-size: 14px;
+  color: #000;
+  line-height: 45px;
+  height: 40px;
+  width: 320px;
+  width: 98%;
+  margin: 15px;
+}
+.schReg .form-control li, .form-control .form-control li {
+  margin-bottom: 15px;
+}
+.schReg button, .form-control button {
+  background: #343434;
+  color: #fff;
+  font-size: 16px;
+  line-height: 47px;
+  border: none;
+  padding: 0 30px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+footer {
+  background: linear-gradient(105deg, blue, navy);
+}
+footer .about h2 {
+  text-decoration: underline;
+  color: #0f9ce8;
+  margin-bottom: 25px;
+}
+footer .about p {
+  font-size: 23px;
+  color: white;
+  transition: color 0.2s;
+}
+footer .about p:hover {
+  color: #4180CB;
+}
+footer .links ul {
+  list-style-type: none;
+}
+footer .links h2 {
+  text-decoration: underline;
+  color: #0f9ce8;
+  margin-bottom: 25px;
+}
+footer .links li a {
+  text-decoration: none;
+  font-size: 23px;
+  color: white;
+  transition: color 0.2s;
+}
+footer .links li a:hover {
+  text-decoration: none;
+  color: #4180CB;
+}
+footer .location {
+  font-size: 23px;
+  color: #fff;
+}
+footer .location h2 {
+  text-decoration: underline;
+  color: #0f9ce8;
+  margin-bottom: 25px;
+}
+footer .location i {
+  font-size: 18px;
+}
+footer .copyright p {
+  text-align: center;
+  margin: 12px 0;
+  font-size: 20px;
+  color: white;
+}
+
+#quiz {
+  padding-top: 10px;
+  text-align: center;
+  background-image: url("../Img/blue-question-mark-background-with-text-space-quiz-symbol-vector.jpg");
+  height: 100vh;
+}
+#quiz h1, #quiz p {
+  color: navy;
+  font-weight: bolder;
+  font-style: italic;
+}
+#quiz .instruction .instruct {
+  font-size: 25px;
+  font-weight: 500;
+  color: red;
+}
+#quiz .question-area {
+  margin-top: 30px;
+  border: 3px solid #054283;
+  box-shadow: -5px -5px 10px #054283;
+  width: 40%;
+  margin: 5px auto 5px auto;
+  background-color: white;
+  word-spacing: 0.2em;
+}
+#quiz .clock {
+  display: flex;
+  justify-content: center;
+}
+#quiz .opt {
+  display: block;
+  text-align: left;
+  margin: 20px;
+  width: 100%;
+}
+#quiz .left-align {
+  text-align: left;
+  width: 80%;
+  margin: 2px auto 2px auto;
+  padding-top: 20px;
+  font-size: 20px;
+}
+#quiz h1 {
+  font-size: 40px;
+}
+#quiz p {
+  font-size: 18px;
+  padding-top: 100px;
+}
+#quiz .sub {
+  display: flex;
+  justify-content: left;
+  margin-top: 20px;
+  width: 100px;
+  height: 35px;
+  font-size: 20px;
+  color: black;
+  margin-right: 200px;
+}
+#quiz .sub #timer {
+  text-align: right;
+  font-size: 18px;
+  padding-right: 5px;
+}/*# sourceMappingURL=main.css.map */

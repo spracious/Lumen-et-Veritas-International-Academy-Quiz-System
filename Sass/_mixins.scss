@@ -1,0 +1,29 @@
+// @mixin linerGradient {
+//     background: linear-gradient(
+//         to right,
+//         #09d3ac,
+//         #fde311
+//     );
+//     -webkit-background-clip: text;
+//     background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//   }
+
+//   @mixin card {
+//     width: 80%;
+//     min-height: 400px;
+//     background-color: $primary-color;
+//     box-shadow: 0 0 10px  $decor2-color;
+//     margin: auto;
+//     margin-top: 3rem;
+//     color: $decor2-color;
+//     transition: all .5s ease-in-out;
+//   }
+
+@mixin flexCenter {
+    display: flex;
+    text-align: end;
+    justify-content: flex-end;
+    // align-items: center;
+}
+
