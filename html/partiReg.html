@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participant Registeration</title>
+    <link rel="stylesheet" href="../Sass/bootstrap.min.css">
+    <link rel="stylesheet" href="../Sass/main.css">
+</head>
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a id="logo" class="navbar-brand" href="../index.html">
+            <img src="../Img/logo.png" alt="Logo"> <br>
+            <i>LVIA</i>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse bg-primary" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item ">
+                <a class="nav-link active text-light me-5" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light me-5" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light me-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  LVIA Hall of Fame
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">html</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item ">
+                <a class="nav-link active text-light me-5" aria-current="page" href="./index.html">Register</a>
+              </li> -->
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light me-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Registrations
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../html/schReg.html">School</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="../html/partiReg.html">Participant</a></li>
+                 
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active text-light">Contact us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Banner -->
+      <section class="banner">
+        <img src="../Img/banda.jpeg" alt="">
+        <div class="banner-text">
+            <h3>Welcome to the</h3>
+            <h2>2024 Quiz Competition of</h2>
+            <h1>Lumen et Veritas Int'l Academy </h1>
+             
+            <!-- <div class="notification">
+                <div class="box">
+                    <a class="button" href="#popup1">Read Me!!!</a>
+                </div>
+                
+                <div id="popup1" class="overlay">
+                    <div class="popup">
+                        <p>Registration Deadline <br>
+                          <i style="color: red;">14th January 2023</i></p>
+                        <a class="close" href="#">&times;</a>
+                        <div class="content">
+                            Please note that late entry attracts a fine of <strike>N</strike>5,000 for further accessing.
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <i>Powered by JAVASCRIPT</i>
+
+        </div>
+      </section>
+
+      <!-- section1 -->
+     <section class="section1">
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                  <img src="../Img/studnt img.jpg" alt="" class="img-fluid rounded-5"> 
+            </div>
+
+            <div class="col-md-3">
+                  <img src="../Img/banner.jpg" alt="" class="img-fluid rounded-5">
+            </div>
+
+            <div class="col-md-3">
+                  <img src="../Img/studnt img1.jpg" alt="" class="img-fluid rounded-5">
+            </div> 
+        </div>
+     </section>
+
+ 
+
+     <details href="" class="container" >
+      <summary style="background-color: #99b4e4; font-size: 40px; text-align: center; color:#fff; margin-top: 30px; ">Registeration Now Open! Click to Apply / Login 
+        <div class="timer">
+            <h1>Time Left:</h1>
+            <ul>
+                <li><h1 id="day-box">0</h1><p>days</p></li>
+                <li><h1 id="hr-box">0</h1><p>hours</p></li>
+                <li><h1 id="min-box">0</h1><p>minutes</p></li>
+                <li><h1 id="sec-box">0</h1><p>seconds</p></li>
+            </ul>
+        </div>
+     </summary>
+
+      <div class="btn" id="btn">
+        <div class="form" >
+        
+          <div class="container" id="register">
+              <form id="registerForm" method="POST" name="registration" class="form-control" onsubmit="return validateForm();">
+                  <div>
+                      <h1>REGISTER  PARTICIPANT</h1>
+                  <ul>
+               
+                      <div class="instruction">
+                          <p class="instruct">Participant Section</p>
+                          <p>Please enter personal details and choose a personal email address and not an email address of your college. 
+                              Should you lose access to the email provided in this field, you can request
+                              for your additional email to be your principal email. For security reasons, we will not
+                              be able to change your email address to a different email address other than what is
+                              provided in the ‘additional email’ field.</p>
+                      </div>
+
+                      <li>
+                          <label for="uName">Full Name</label>
+                          <input class="inpt" type="text" name="Name" id="uName" placeholder="Enter your name." required>
+                      </li>
+
+                      <li>
+                          <label for="uName">School</label>
+                          <select name="" id="select_school" class="sel">
+                          </select>
+                      </li>
+
+                      <li>
+                          <label for="uEmail">Email</label>
+                          <input class="inpt" type="email" name="Email" id="uEmail" placeholder="Enter your email id." oninput="emailExist(this)" required>
+                      </li>
+                    
+                      <li>
+                          <label for="uPassword">Password</label>
+                          <input class="inpt" type="password" name="Password" id="uPassword" placeholder="Enter your password." pattern=".{0}|.{6,}" required>
+                      </li>
+                      <li>
+                          <label for="confirmPassword">Confirm Password</label>
+                          <input class="inpt" type="password" name="Confirm Password" id="confirmPassword" placeholder="Confirm Password." oninput="verifyPassword(this)" required>
+                      </li>
+                      <li>
+                          <button type="submit" id="submit">Submit</button>
+                          <span>Already have an account? <a href="javascript:void(0);" onclick="showHide('logIn', 'registerForm')">Log in now</a></span>
+                      </li>
+                  </ul>
+                  </div>
+              </form>
+              
+              <form id="thankYou" class="form-control" style="display: none;">
+                  <div style="text-align: center">
+                      <h1>Congratulation🎉🎉🎉</h1>
+                      <p>You have sucsessfully registerd with us. You can <a href="javascript:void(0);" onclick="showHide('logIn', 'thankYou')">Log in now</a></p>
+                  </div>
+              </form>
+
+              <form action="./quiz.html" name="login" id="logIn" method="POST" class="form-control" onsubmit="return loginUser()" style="display: none;">
+                  <div>
+                          <h1>LOG IN</h1>
+                  <ul>
+                      <li>
+                          <label for="uemailId">Email Id</label>
+                          <input class="inpt" type="email" name="uemailId" id="uemailId" placeholder="Enter your email id" required>
+                      </li>
+                      <li>
+                              <label for="ePassword">Password</label>
+                              <input class="inpt" type="password" name="ePassword" id="ePassword" placeholder="Enter your password" required>
+                          </li>
+                          <li>
+                                  <button type="submit" id="login">Log In</button>
+
+                                  <span>New around here? <a href="javascript:void(0);" onclick="showHide('registerForm','logIn')">Register now</a></span>
+                              </li>
+                  </ul>
+              </div>
+              </form>
+          </div>
+          </div>
+      </div>
+    </details>
+     
+    <div class="btn.is-visible d_null">
+      <h1>Oops! You missed it..... Please proceed to pay late registration fee.</h1>
+     </div>
+
+    <footer>
+
+        <div class="mt-5 pt-5 pb-5 footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-5 col-xs-12 about">
+                  <h2>About</h2>
+                  <p class="pr-5">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. <br> Nullam ac ante mollis quam <br> tristique convallis. </p>
+                  <!-- <p><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i class="fa fa-linkedin-square"></i></a></p> -->
+                </div>
+
+                <div class="col-lg-3 col-xs-12 links">
+                  <h2 class="mt-lg-0 mt-sm-3">LVIA Hall of Fame</h2>
+                    <ul class="m-0 p-0">
+                      <li>- <a href="#">Lorem ipsum</a></li>
+                      <li>- <a href="#">Nam mauris velit</a></li>
+                      <li>- <a href="#">Etiam vitae mauris</a></li>
+                      <li>- <a href="#">Fusce scelerisque</a></li>
+                      <li>- <a href="#">Sed faucibus</a></li>
+                      <li>- <a href="#">Mauris efficitur nulla</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-xs-12 location">
+                  <h2 class="mt-lg-0 mt-sm-4">Contact Us</h2>
+                  <p>Plot 234, Lorem ipsum dolor, consectetur adipiscing.</p>
+                  <p class="mb-0"><i class=" mr-3"></i>(+234) 012-345-6789</p>
+                  <p><i class=" mr-3"></i>info@LVIA.com</p>
+                </div>
+              </div>
+
+              <hr style="color: #fff; font-weight: bolder;">
+
+              <div class="row mt-5">
+                <div class="col copyright">
+                     <p>Created & Designed with ❤ by PRECIOUS OJIMADU</p>
+                     <p> All Rights Reserved.</p>
+                   <p>Copyright © DECEMBER 2022</p>
+                </div>
+              </div>
+            </div>
+            </div>
+      </footer>
+    
+</body>
+<script src="../Js/jquery-3.6.1.js"></script>
+<script src="../Js/index.js"></script>
+<script src="../Js/sch reg.js"></script>
+<!-- <script src="./Js/quiz.js"></script> -->
+<script src="../Js/bootstrap.bundle.js"></script>
+<!-- <script src=".Js/bootstrap.bundle.min.js"></script> -->
+<script src=".,/Js/popper.min.js"></script>
+</html>

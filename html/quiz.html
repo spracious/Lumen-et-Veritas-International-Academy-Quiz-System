@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> LVIA Quiz </title>
+    <link rel="stylesheet" href="../Sass/bootstrap.min.css">
+    <link rel="stylesheet" href="../Sass/main.css">
+</head>
+<body>
+ 
+    <div id="quiz" class="page">
+        <h1>Welcome <span id="output"></span></h1><br>
+        <h1>to the LVIA Live Quiz App</h1>
+
+        <div class="instruction">
+            <p class="instruct">WARNING: <br>
+                 Please note that multiple entry attracts immediate disqualification! <br>
+                  Been unable to complete quiz before time elaspes equals no score</p>
+        </div>
+
+        <div class="question-area">
+           <div class="clock">
+            <h3 id="sName"></h3>
+            <h3 id="uName"></h3>
+            <h3 id="rmd">Elasped Time</h3>
+            </div>
+            <div id="timer">
+                ..:..
+              </div>
+            <div class="left-align">
+                <div id="question"></div>
+                <input class="sub" id="next" type="button" name="question" value="Next" onclick="nextQuestion();">
+            </div>
+        </div>
+        <p>Powered by JAVASCRIPT</p>
+    </div>
+</body>
+<!-- <script src="./Js/jquery-3.6.1.js"></script> -->
+<!-- <script src="./Js/index.js"></script> -->
+<script src="../Js/bootstrap.bundle.js"></script>
+<script src="../Js/quiz.js"></script>
+</html>
