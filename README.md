@@ -1,6 +1,6 @@
 # Lumen et Veritas International Academy Quiz System
 
-Welcome to the Tumblr Blog Clone project, a combination of HTML, CSS, and JavaScript.
+Welcome to Lumen et Veritas International Academy Quiz System, a combination of HTML, CSS, and JavaScript.
 
 # Getting Started
 Clone or download the project repository to your local machine. Open the project directory in your preferred code editor.
